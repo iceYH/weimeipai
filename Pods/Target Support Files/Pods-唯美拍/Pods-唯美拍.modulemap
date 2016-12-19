@@ -1,0 +1,6 @@
+framework module Pods____ {
+  umbrella header "Pods-唯美拍-umbrella.h"
+
+  export *
+  module * { export * }
+}

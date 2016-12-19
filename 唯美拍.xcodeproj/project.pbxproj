@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44E6F53D3E5BCBB8E13C85E3 /* Pods____.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A96D4CBF0802293CAB41F49 /* Pods____.framework */; };
 		F5019E2D1E077ACD004173E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5019E2C1E077ACD004173E6 /* AppDelegate.swift */; };
 		F5019E2F1E077ACD004173E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5019E2E1E077ACD004173E6 /* ViewController.swift */; };
 		F5019E321E077ACD004173E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5019E301E077ACD004173E6 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07D2C07768D5E640B541DA71 /* Pods-唯美拍.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-唯美拍.debug.xcconfig"; path = "Pods/Target Support Files/Pods-唯美拍/Pods-唯美拍.debug.xcconfig"; sourceTree = "<group>"; };
+		4A96D4CBF0802293CAB41F49 /* Pods____.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods____.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F62D5AB1E4849FCF6B0B8D5 /* Pods-唯美拍.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-唯美拍.release.xcconfig"; path = "Pods/Target Support Files/Pods-唯美拍/Pods-唯美拍.release.xcconfig"; sourceTree = "<group>"; };
 		F5019E291E077ACD004173E6 /* 唯美拍.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "唯美拍.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5019E2C1E077ACD004173E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5019E2E1E077ACD004173E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44E6F53D3E5BCBB8E13C85E3 /* Pods____.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1ECFD041E29DEE2DF98713D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A96D4CBF0802293CAB41F49 /* Pods____.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F5019E201E077ACD004173E6 = {
 			isa = PBXGroup;
 			children = (
 				F5019E2B1E077ACD004173E6 /* 唯美拍 */,
 				F5019E2A1E077ACD004173E6 /* Products */,
+				F59112E95E55679F5356DB78 /* Pods */,
+				1ECFD041E29DEE2DF98713D7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = "唯美拍";
 			sourceTree = "<group>";
 		};
+		F59112E95E55679F5356DB78 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				07D2C07768D5E640B541DA71 /* Pods-唯美拍.debug.xcconfig */,
+				9F62D5AB1E4849FCF6B0B8D5 /* Pods-唯美拍.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5019E3B1E077ACD004173E6 /* Build configuration list for PBXNativeTarget "唯美拍" */;
 			buildPhases = (
+				D202E90E7418CC5D9FFFFC89 /* [CP] Check Pods Manifest.lock */,
 				F5019E251E077ACD004173E6 /* Sources */,
 				F5019E261E077ACD004173E6 /* Frameworks */,
 				F5019E271E077ACD004173E6 /* Resources */,
+				EC8209B8B97ECD48C088263A /* [CP] Embed Pods Frameworks */,
+				4A3815EB2A64B8771CA0675D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A3815EB2A64B8771CA0675D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-唯美拍/Pods-唯美拍-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D202E90E7418CC5D9FFFFC89 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EC8209B8B97ECD48C088263A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-唯美拍/Pods-唯美拍-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F5019E251E077ACD004173E6 /* Sources */ = {
@@ -258,9 +333,11 @@
 		};
 		F5019E3C1E077ACD004173E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07D2C07768D5E640B541DA71 /* Pods-唯美拍.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "唯美拍/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yh-dh.meipai";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -270,9 +347,11 @@
 		};
 		F5019E3D1E077ACD004173E6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F62D5AB1E4849FCF6B0B8D5 /* Pods-唯美拍.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "唯美拍/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yh-dh.meipai";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -299,6 +378,7 @@
 				F5019E3D1E077ACD004173E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
