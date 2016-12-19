@@ -16,7 +16,7 @@
 
 /* Begin PBXFileReference section */
 		07D2C07768D5E640B541DA71 /* Pods-唯美拍.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-唯美拍.debug.xcconfig"; path = "Pods/Target Support Files/Pods-唯美拍/Pods-唯美拍.debug.xcconfig"; sourceTree = "<group>"; };
-		4A96D4CBF0802293CAB41F49 /* Pods____.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods____.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A96D4CBF0802293CAB41F49 /* Pods____.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods____.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F62D5AB1E4849FCF6B0B8D5 /* Pods-唯美拍.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-唯美拍.release.xcconfig"; path = "Pods/Target Support Files/Pods-唯美拍/Pods-唯美拍.release.xcconfig"; sourceTree = "<group>"; };
 		F5019E291E077ACD004173E6 /* 唯美拍.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "唯美拍.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5019E2C1E077ACD004173E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -182,7 +182,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		EC8209B8B97ECD48C088263A /* [CP] Embed Pods Frameworks */ = {
