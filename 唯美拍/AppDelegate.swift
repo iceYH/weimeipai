@@ -12,11 +12,13 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    let navVC :UINavigationController = YHNavVC()
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+            let mainVC :mainViewController = mainViewController()
+            
+            let navVC :YHNavVC = YHNavVC(rootViewController: mainVC)
+
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = navVC
         window?.makeKeyAndVisible()
