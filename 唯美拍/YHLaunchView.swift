@@ -21,7 +21,7 @@ class YHLaunchView: UIView {
         //创建一个CABasicAnimation作用于CALayer的anchorPoint
         let topAnimation = CABasicAnimation.init(keyPath: "anchorPoint")
         //设置移动路径
-        topAnimation.toValue = NSValue.init(cgPoint: CGPointMake(1, 1))
+        topAnimation.toValue = NSValue.init(cgPoint: CGPoint(x:1,y: 1))
         //动画时间
         topAnimation.duration = 2.6
         //设置代理，方便完成动画后移除当前view
@@ -37,7 +37,7 @@ class YHLaunchView: UIView {
         let bottomAnimation = CABasicAnimation.init(keyPath: "anchorPoint")
         //设置移动路径
         
-        bottomAnimation.toValue = NSValue.init(CGPoint: CGPoint(x: 0, y: 0))
+        bottomAnimation.toValue = NSValue.init(coder: CGPoint(x: 0, y: 0))
         //动画时间
         bottomAnimation.duration = 2.6
         //设置动画速度为匀速
@@ -64,12 +64,12 @@ class YHLaunchView: UIView {
     private func configTopShapeLayer() {
         //绘制贝斯尔曲线
         let topBezier:UIBezierPath = UIBezierPath()
-        topBezier.moveToPoint(CGPointMake(-1, -1))
-        topBezier.addLineToPoint(CGPointMake(bounds.width+1, -1))
-        topBezier.addCurveToPoint(CGPointMake(bounds.width/2.0+1, bounds.height/2.0+1), controlPoint1: CGPointMake(bounds.width+1, 0+1), controlPoint2: CGPointMake(343.5+1, 242.5+1))
-        topBezier.addCurveToPoint(CGPointMake(-1, bounds.height+2), controlPoint1: CGPointMake(31.5+2, 424.5+2), controlPoint2: CGPointMake(0+2, bounds.height+2))
-        topBezier.addLineToPoint(CGPointMake(-1, -1))
-        topBezier.closePath()
+        topBezier.move(to: CGPoint(x:-1,y:-1))
+        topBezier.addLine(to: CGPoint(x:bounds.width+1, y:-1))
+        topBezier.addCurve(to: CGPoint(x:bounds.width/2.0+1, y:bounds.height/2.0+1), controlPoint1: CGPoint(x:bounds.width+1, y:0+1), controlPoint2: CGPoint(x:343.5+1,y: 242.5+1))
+        topBezier.addCurve(to: CGPoint(x:-1, y:bounds.height+2), controlPoint1: CGPoint(x:31.5+2, y:424.5+2), controlPoint2: CGPoint(x:0+2, y:bounds.height+2))
+        topBezier.addLine(to: CGPoint(x:-1, y:-1))
+        topBezier.close()
         //创建一个CAShapeLayer，将绘制的贝斯尔曲线的path给CAShapeLayer
         let topShape = CAShapeLayer()
         topShape.path = topBezier.CGPath
