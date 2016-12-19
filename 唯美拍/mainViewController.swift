@@ -8,13 +8,23 @@
 
 import Foundation
 import UIKit
+import SnapKit
 
-class mainViewController: UIViewController {
+class mainViewController: UINavigationController {
     
  
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.red
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+        self.view.backgroundColor = .white
+        let camerabtn:UIButton = UIButton()
+        camerabtn.backgroundColor = .red
+        camerabtn.setTitle("照相机", for: .normal)
+        view.addSubview(camerabtn)
+        camerabtn.snp.makeConstraints { (make) -> Void in
+            make.width.height.equalTo(100)
+            make.center.equalTo(self.view)
+        }
     }
     
 

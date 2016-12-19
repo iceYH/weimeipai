@@ -12,11 +12,14 @@
 		F5019E341E077ACD004173E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5019E331E077ACD004173E6 /* Assets.xcassets */; };
 		F5019E371E077ACD004173E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5019E351E077ACD004173E6 /* LaunchScreen.storyboard */; };
 		F5049F691E07970D00FBB04A /* mainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5049F681E07970D00FBB04A /* mainViewController.swift */; };
+		F5049F6B1E07B20C00FBB04A /* beatuyCameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5049F6A1E07B20C00FBB04A /* beatuyCameraVC.swift */; };
+		F5D078EC1E07B3A300C90A0C /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D078EB1E07B3A300C90A0C /* SnapKit.framework */; };
+		F5D078EE1E07B3A600C90A0C /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D078ED1E07B3A600C90A0C /* GPUImage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		07D2C07768D5E640B541DA71 /* Pods-唯美拍.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-唯美拍.debug.xcconfig"; path = "Pods/Target Support Files/Pods-唯美拍/Pods-唯美拍.debug.xcconfig"; sourceTree = "<group>"; };
-		4A96D4CBF0802293CAB41F49 /* Pods____.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods____.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A96D4CBF0802293CAB41F49 /* Pods____.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods____.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F62D5AB1E4849FCF6B0B8D5 /* Pods-唯美拍.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-唯美拍.release.xcconfig"; path = "Pods/Target Support Files/Pods-唯美拍/Pods-唯美拍.release.xcconfig"; sourceTree = "<group>"; };
 		F5019E291E077ACD004173E6 /* 唯美拍.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "唯美拍.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5019E2C1E077ACD004173E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		F5019E361E077ACD004173E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5019E381E077ACD004173E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5049F681E07970D00FBB04A /* mainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainViewController.swift; sourceTree = "<group>"; };
+		F5049F6A1E07B20C00FBB04A /* beatuyCameraVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = beatuyCameraVC.swift; sourceTree = "<group>"; };
+		F5D078EB1E07B3A300C90A0C /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = "../../Library/Developer/Xcode/DerivedData/唯美拍-gponizbxhucpwfftgkwthpjktlrh/Build/Products/Debug-iphonesimulator/SnapKit/SnapKit.framework"; sourceTree = "<group>"; };
+		F5D078ED1E07B3A600C90A0C /* GPUImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GPUImage.framework; path = "../../Library/Developer/Xcode/DerivedData/唯美拍-gponizbxhucpwfftgkwthpjktlrh/Build/Products/Debug-iphonesimulator/GPUImage/GPUImage.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5D078EE1E07B3A600C90A0C /* GPUImage.framework in Frameworks */,
+				F5D078EC1E07B3A300C90A0C /* SnapKit.framework in Frameworks */,
 				44E6F53D3E5BCBB8E13C85E3 /* Pods____.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -41,6 +49,8 @@
 		1ECFD041E29DEE2DF98713D7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F5D078ED1E07B3A600C90A0C /* GPUImage.framework */,
+				F5D078EB1E07B3A300C90A0C /* SnapKit.framework */,
 				4A96D4CBF0802293CAB41F49 /* Pods____.framework */,
 			);
 			name = Frameworks;
@@ -72,6 +82,7 @@
 				F5049F681E07970D00FBB04A /* mainViewController.swift */,
 				F5019E351E077ACD004173E6 /* LaunchScreen.storyboard */,
 				F5019E381E077ACD004173E6 /* Info.plist */,
+				F5049F6A1E07B20C00FBB04A /* beatuyCameraVC.swift */,
 			);
 			path = "唯美拍";
 			sourceTree = "<group>";
@@ -207,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5049F6B1E07B20C00FBB04A /* beatuyCameraVC.swift in Sources */,
 				F5019E2D1E077ACD004173E6 /* AppDelegate.swift in Sources */,
 				F5049F691E07970D00FBB04A /* mainViewController.swift in Sources */,
 			);
