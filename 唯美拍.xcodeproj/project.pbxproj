@@ -13,6 +13,8 @@
 		F5019E371E077ACD004173E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5019E351E077ACD004173E6 /* LaunchScreen.storyboard */; };
 		F5049F691E07970D00FBB04A /* mainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5049F681E07970D00FBB04A /* mainViewController.swift */; };
 		F5049F6B1E07B20C00FBB04A /* beatuyCameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5049F6A1E07B20C00FBB04A /* beatuyCameraVC.swift */; };
+		F58CEF821E07E88F00FD8BC6 /* YHNavVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58CEF811E07E88F00FD8BC6 /* YHNavVC.swift */; };
+		F58CEF841E07E8F000FD8BC6 /* YHBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58CEF831E07E8F000FD8BC6 /* YHBaseVC.swift */; };
 		F5D078EC1E07B3A300C90A0C /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D078EB1E07B3A300C90A0C /* SnapKit.framework */; };
 		F5D078EE1E07B3A600C90A0C /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D078ED1E07B3A600C90A0C /* GPUImage.framework */; };
 /* End PBXBuildFile section */
@@ -28,6 +30,8 @@
 		F5019E381E077ACD004173E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5049F681E07970D00FBB04A /* mainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainViewController.swift; sourceTree = "<group>"; };
 		F5049F6A1E07B20C00FBB04A /* beatuyCameraVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = beatuyCameraVC.swift; sourceTree = "<group>"; };
+		F58CEF811E07E88F00FD8BC6 /* YHNavVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHNavVC.swift; sourceTree = "<group>"; };
+		F58CEF831E07E8F000FD8BC6 /* YHBaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHBaseVC.swift; sourceTree = "<group>"; };
 		F5D078EB1E07B3A300C90A0C /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = "../../Library/Developer/Xcode/DerivedData/唯美拍-gponizbxhucpwfftgkwthpjktlrh/Build/Products/Debug-iphonesimulator/SnapKit/SnapKit.framework"; sourceTree = "<group>"; };
 		F5D078ED1E07B3A600C90A0C /* GPUImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GPUImage.framework; path = "../../Library/Developer/Xcode/DerivedData/唯美拍-gponizbxhucpwfftgkwthpjktlrh/Build/Products/Debug-iphonesimulator/GPUImage/GPUImage.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,11 +82,13 @@
 			isa = PBXGroup;
 			children = (
 				F5019E2C1E077ACD004173E6 /* AppDelegate.swift */,
+				F58CEF831E07E8F000FD8BC6 /* YHBaseVC.swift */,
 				F5019E331E077ACD004173E6 /* Assets.xcassets */,
 				F5049F681E07970D00FBB04A /* mainViewController.swift */,
 				F5019E351E077ACD004173E6 /* LaunchScreen.storyboard */,
 				F5019E381E077ACD004173E6 /* Info.plist */,
 				F5049F6A1E07B20C00FBB04A /* beatuyCameraVC.swift */,
+				F58CEF811E07E88F00FD8BC6 /* YHNavVC.swift */,
 			);
 			path = "唯美拍";
 			sourceTree = "<group>";
@@ -220,7 +226,9 @@
 			files = (
 				F5049F6B1E07B20C00FBB04A /* beatuyCameraVC.swift in Sources */,
 				F5019E2D1E077ACD004173E6 /* AppDelegate.swift in Sources */,
+				F58CEF841E07E8F000FD8BC6 /* YHBaseVC.swift in Sources */,
 				F5049F691E07970D00FBB04A /* mainViewController.swift in Sources */,
+				F58CEF821E07E88F00FD8BC6 /* YHNavVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
