@@ -9,10 +9,9 @@
 /* Begin PBXBuildFile section */
 		44E6F53D3E5BCBB8E13C85E3 /* Pods____.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A96D4CBF0802293CAB41F49 /* Pods____.framework */; };
 		F5019E2D1E077ACD004173E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5019E2C1E077ACD004173E6 /* AppDelegate.swift */; };
-		F5019E2F1E077ACD004173E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5019E2E1E077ACD004173E6 /* ViewController.swift */; };
-		F5019E321E077ACD004173E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5019E301E077ACD004173E6 /* Main.storyboard */; };
 		F5019E341E077ACD004173E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5019E331E077ACD004173E6 /* Assets.xcassets */; };
 		F5019E371E077ACD004173E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5019E351E077ACD004173E6 /* LaunchScreen.storyboard */; };
+		F5049F691E07970D00FBB04A /* mainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5049F681E07970D00FBB04A /* mainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +20,10 @@
 		9F62D5AB1E4849FCF6B0B8D5 /* Pods-唯美拍.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-唯美拍.release.xcconfig"; path = "Pods/Target Support Files/Pods-唯美拍/Pods-唯美拍.release.xcconfig"; sourceTree = "<group>"; };
 		F5019E291E077ACD004173E6 /* 唯美拍.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "唯美拍.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5019E2C1E077ACD004173E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F5019E2E1E077ACD004173E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F5019E311E077ACD004173E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F5019E331E077ACD004173E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5019E361E077ACD004173E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5019E381E077ACD004173E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5049F681E07970D00FBB04A /* mainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,9 +68,8 @@
 			isa = PBXGroup;
 			children = (
 				F5019E2C1E077ACD004173E6 /* AppDelegate.swift */,
-				F5019E2E1E077ACD004173E6 /* ViewController.swift */,
-				F5019E301E077ACD004173E6 /* Main.storyboard */,
 				F5019E331E077ACD004173E6 /* Assets.xcassets */,
+				F5049F681E07970D00FBB04A /* mainViewController.swift */,
 				F5019E351E077ACD004173E6 /* LaunchScreen.storyboard */,
 				F5019E381E077ACD004173E6 /* Info.plist */,
 			);
@@ -152,7 +149,6 @@
 			files = (
 				F5019E371E077ACD004173E6 /* LaunchScreen.storyboard in Resources */,
 				F5019E341E077ACD004173E6 /* Assets.xcassets in Resources */,
-				F5019E321E077ACD004173E6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,22 +207,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5019E2F1E077ACD004173E6 /* ViewController.swift in Sources */,
 				F5019E2D1E077ACD004173E6 /* AppDelegate.swift in Sources */,
+				F5049F691E07970D00FBB04A /* mainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F5019E301E077ACD004173E6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F5019E311E077ACD004173E6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F5019E351E077ACD004173E6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -342,6 +330,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yh-dh.meipai";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -356,6 +345,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yh-dh.meipai";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
