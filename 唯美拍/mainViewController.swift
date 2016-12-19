@@ -25,7 +25,14 @@ class mainViewController: UINavigationController {
             make.width.height.equalTo(100)
             make.center.equalTo(self.view)
         }
+        camerabtn.addTarget(self, action: #selector(camerBtnClick), for: .touchUpInside)
+        
     }
     
-
+}
+extension mainViewController{
+    @objc fileprivate func camerBtnClick() {
+        let beatuyVC :UIViewController = beatuyCameraVC()
+        navigationController?.pushViewController(beatuyVC, animated: true)
+    }
 }

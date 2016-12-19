@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "&#x552f;&#x7f8e;&#x62cd;/mainViewController.swift"
-            timestampString = "503830156.058457"
+            timestampString = "503832061.131138"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "camerBtnClick()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
