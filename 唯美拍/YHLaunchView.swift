@@ -37,7 +37,7 @@ class YHLaunchView: UIView {
         let bottomAnimation = CABasicAnimation.init(keyPath: "anchorPoint")
         //设置移动路径
         
-        bottomAnimation.toValue = NSValue.init(coder: CGPoint(x: 0, y: 0))
+        bottomAnimation.toValue = NSValue(cgPoint: CGPoint(x: 0, y: 0))        //动画时间
         //动画时间
         bottomAnimation.duration = 2.6
         //设置动画速度为匀速
@@ -72,9 +72,9 @@ class YHLaunchView: UIView {
         topBezier.close()
         //创建一个CAShapeLayer，将绘制的贝斯尔曲线的path给CAShapeLayer
         let topShape = CAShapeLayer()
-        topShape.path = topBezier.CGPath
+        topShape.path = topBezier.cgPath
         //给topLayer设置contents为启动图
-        topLayer.contents = launchImage?.CGImage
+        topLayer.contents = launchImage?.cgImage
         topLayer.frame = bounds
         layer.addSublayer(topLayer)
         //将绘制后的CAShapeLayer做为topLayer的mask
@@ -95,9 +95,9 @@ class YHLaunchView: UIView {
         bottomBezier.close()
         //创建一个CAShapeLayer，将绘制的贝斯尔曲线的path给CAShapeLayer
         let bottomShape = CAShapeLayer()
-        bottomShape.path = bottomBezier.CGPath
+        bottomShape.path = bottomBezier.cgPath
         //给bottomLayer设置contents为启动图
-        bottomLayer.contents = launchImage?.CGImage
+        bottomLayer.contents = launchImage?.cgImage
         bottomLayer.frame = bounds
         layer.addSublayer(bottomLayer)
         //将绘制后的CAShapeLayer做为bottomLayer的mask
@@ -108,12 +108,15 @@ class YHLaunchView: UIView {
     /**
      动画完成后移除当前view
      */
-    internal override func animationDidStop(anim: CAAnimation, finished flag: Bool) {
-        if flag {
-            removeFromSuperview()
-        }
-    }
     
+    
+    
+//    internal override func animationDidStop(anim: CAAnimation, finished flag: Bool) {
+//        if flag {
+//            removeFromSuperview()
+//        }
+//    }
+//    
     /*
      // Only override drawRect: if you perform custom drawing.
      // An empty implementation adversely affects performance during animation.
@@ -123,4 +126,11 @@ class YHLaunchView: UIView {
      */
     
 }
-
+extension YHLaunchView :CAAnimationDelegate{
+    
+    func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
+        if flag {
+            removeFromSuperview()
+        }
+    }
+}
