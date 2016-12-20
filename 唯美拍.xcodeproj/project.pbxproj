@@ -22,7 +22,7 @@
 
 /* Begin PBXFileReference section */
 		07D2C07768D5E640B541DA71 /* Pods-唯美拍.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-唯美拍.debug.xcconfig"; path = "Pods/Target Support Files/Pods-唯美拍/Pods-唯美拍.debug.xcconfig"; sourceTree = "<group>"; };
-		4A96D4CBF0802293CAB41F49 /* Pods____.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods____.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A96D4CBF0802293CAB41F49 /* Pods____.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods____.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F62D5AB1E4849FCF6B0B8D5 /* Pods-唯美拍.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-唯美拍.release.xcconfig"; path = "Pods/Target Support Files/Pods-唯美拍/Pods-唯美拍.release.xcconfig"; sourceTree = "<group>"; };
 		F5019E291E077ACD004173E6 /* 唯美拍.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "唯美拍.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5019E2C1E077ACD004173E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -112,12 +112,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5019E3B1E077ACD004173E6 /* Build configuration list for PBXNativeTarget "唯美拍" */;
 			buildPhases = (
+				FCC80458273D000FF3167C91 /* [CP] Check Pods Manifest.lock */,
 				D202E90E7418CC5D9FFFFC89 /* [CP] Check Pods Manifest.lock */,
 				F5019E251E077ACD004173E6 /* Sources */,
 				F5019E261E077ACD004173E6 /* Frameworks */,
 				F5019E271E077ACD004173E6 /* Resources */,
 				EC8209B8B97ECD48C088263A /* [CP] Embed Pods Frameworks */,
 				4A3815EB2A64B8771CA0675D /* [CP] Copy Pods Resources */,
+				AF854131B1A1BA2DE53DBCF0 /* 📦 Embed Pods Frameworks */,
+				CC90815D6097313C444BF2AB /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -190,6 +193,36 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-唯美拍/Pods-唯美拍-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		AF854131B1A1BA2DE53DBCF0 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-唯美拍/Pods-唯美拍-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC90815D6097313C444BF2AB /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-唯美拍/Pods-唯美拍-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D202E90E7418CC5D9FFFFC89 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -218,6 +251,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-唯美拍/Pods-唯美拍-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCC80458273D000FF3167C91 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
