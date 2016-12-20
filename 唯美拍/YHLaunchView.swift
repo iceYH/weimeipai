@@ -104,7 +104,7 @@ class YHLaunchView: UIView {
         bottomLayer.mask = bottomShape
     }
     
-    //MRAK: animationDelegate
+      //MRAK: animationDelegate
     /**
      动画完成后移除当前view
      */
