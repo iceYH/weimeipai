@@ -13,6 +13,7 @@
 		F5019E371E077ACD004173E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5019E351E077ACD004173E6 /* LaunchScreen.storyboard */; };
 		F5049F691E07970D00FBB04A /* mainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5049F681E07970D00FBB04A /* mainViewController.swift */; };
 		F5049F6B1E07B20C00FBB04A /* beatuyCameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5049F6A1E07B20C00FBB04A /* beatuyCameraVC.swift */; };
+		F5594A7F1E0BE7F200D36F18 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5594A7E1E0BE7F200D36F18 /* UIColor+Extension.swift */; };
 		F58CEF821E07E88F00FD8BC6 /* YHNavVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58CEF811E07E88F00FD8BC6 /* YHNavVC.swift */; };
 		F58CEF841E07E8F000FD8BC6 /* YHBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58CEF831E07E8F000FD8BC6 /* YHBaseVC.swift */; };
 		F58CEF861E07FCBD00FD8BC6 /* YHLaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58CEF851E07FCBD00FD8BC6 /* YHLaunchView.swift */; };
@@ -31,6 +32,7 @@
 		F5019E381E077ACD004173E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5049F681E07970D00FBB04A /* mainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainViewController.swift; sourceTree = "<group>"; };
 		F5049F6A1E07B20C00FBB04A /* beatuyCameraVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = beatuyCameraVC.swift; sourceTree = "<group>"; };
+		F5594A7E1E0BE7F200D36F18 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		F58CEF811E07E88F00FD8BC6 /* YHNavVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHNavVC.swift; sourceTree = "<group>"; };
 		F58CEF831E07E8F000FD8BC6 /* YHBaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHBaseVC.swift; sourceTree = "<group>"; };
 		F58CEF851E07FCBD00FD8BC6 /* YHLaunchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHLaunchView.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				F5019E2C1E077ACD004173E6 /* AppDelegate.swift */,
 				F58CEF831E07E8F000FD8BC6 /* YHBaseVC.swift */,
 				F5019E331E077ACD004173E6 /* Assets.xcassets */,
+				F5594A7E1E0BE7F200D36F18 /* UIColor+Extension.swift */,
 				F5049F681E07970D00FBB04A /* mainViewController.swift */,
 				F5019E351E077ACD004173E6 /* LaunchScreen.storyboard */,
 				F5019E381E077ACD004173E6 /* Info.plist */,
@@ -276,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5594A7F1E0BE7F200D36F18 /* UIColor+Extension.swift in Sources */,
 				F5049F6B1E07B20C00FBB04A /* beatuyCameraVC.swift in Sources */,
 				F5019E2D1E077ACD004173E6 /* AppDelegate.swift in Sources */,
 				F58CEF841E07E8F000FD8BC6 /* YHBaseVC.swift in Sources */,
