@@ -104,33 +104,13 @@ class YHLaunchView: UIView {
         bottomLayer.mask = bottomShape
     }
     
-      //MRAK: animationDelegate
-    /**
-     动画完成后移除当前view
-     */
-    
-    
-    
-//    internal override func animationDidStop(anim: CAAnimation, finished flag: Bool) {
-//        if flag {
-//            removeFromSuperview()
-//        }
-//    }
-//    
-    /*
-     // Only override drawRect: if you perform custom drawing.
-     // An empty implementation adversely affects performance during animation.
-     override func drawRect(rect: CGRect) {
-     // Drawing code
-     }
-     */
-    
 }
 extension YHLaunchView :CAAnimationDelegate{
     
     func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
         if flag {
             removeFromSuperview()
+            print("动画销毁")
         }
     }
 }
