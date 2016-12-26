@@ -11,12 +11,13 @@
 		F5019E2D1E077ACD004173E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5019E2C1E077ACD004173E6 /* AppDelegate.swift */; };
 		F5019E341E077ACD004173E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5019E331E077ACD004173E6 /* Assets.xcassets */; };
 		F5019E371E077ACD004173E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5019E351E077ACD004173E6 /* LaunchScreen.storyboard */; };
-		F5049F691E07970D00FBB04A /* mainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5049F681E07970D00FBB04A /* mainViewController.swift */; };
-		F5049F6B1E07B20C00FBB04A /* beatuyCameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5049F6A1E07B20C00FBB04A /* beatuyCameraVC.swift */; };
-		F5594A7F1E0BE7F200D36F18 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5594A7E1E0BE7F200D36F18 /* UIColor+Extension.swift */; };
-		F58CEF821E07E88F00FD8BC6 /* YHNavVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58CEF811E07E88F00FD8BC6 /* YHNavVC.swift */; };
-		F58CEF841E07E8F000FD8BC6 /* YHBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58CEF831E07E8F000FD8BC6 /* YHBaseVC.swift */; };
-		F58CEF861E07FCBD00FD8BC6 /* YHLaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58CEF851E07FCBD00FD8BC6 /* YHLaunchView.swift */; };
+		F5960B661E11049F00039AC9 /* YHBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5960B571E11049F00039AC9 /* YHBaseVC.swift */; };
+		F5960B671E11049F00039AC9 /* YHNavVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5960B581E11049F00039AC9 /* YHNavVC.swift */; };
+		F5960B681E11049F00039AC9 /* beatuyCameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5960B5B1E11049F00039AC9 /* beatuyCameraVC.swift */; };
+		F5960B691E11049F00039AC9 /* YHLaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5960B5D1E11049F00039AC9 /* YHLaunchView.swift */; };
+		F5960B6A1E11049F00039AC9 /* mainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5960B611E11049F00039AC9 /* mainViewController.swift */; };
+		F5960B6B1E11049F00039AC9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5960B651E11049F00039AC9 /* Info.plist */; };
+		F5960B6E1E1104A700039AC9 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5960B6D1E1104A700039AC9 /* UIColor+Extension.swift */; };
 		F5D078EC1E07B3A300C90A0C /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D078EB1E07B3A300C90A0C /* SnapKit.framework */; };
 		F5D078EE1E07B3A600C90A0C /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D078ED1E07B3A600C90A0C /* GPUImage.framework */; };
 /* End PBXBuildFile section */
@@ -29,13 +30,13 @@
 		F5019E2C1E077ACD004173E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5019E331E077ACD004173E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5019E361E077ACD004173E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F5019E381E077ACD004173E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F5049F681E07970D00FBB04A /* mainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainViewController.swift; sourceTree = "<group>"; };
-		F5049F6A1E07B20C00FBB04A /* beatuyCameraVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = beatuyCameraVC.swift; sourceTree = "<group>"; };
-		F5594A7E1E0BE7F200D36F18 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
-		F58CEF811E07E88F00FD8BC6 /* YHNavVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHNavVC.swift; sourceTree = "<group>"; };
-		F58CEF831E07E8F000FD8BC6 /* YHBaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHBaseVC.swift; sourceTree = "<group>"; };
-		F58CEF851E07FCBD00FD8BC6 /* YHLaunchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHLaunchView.swift; sourceTree = "<group>"; };
+		F5960B571E11049F00039AC9 /* YHBaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHBaseVC.swift; sourceTree = "<group>"; };
+		F5960B581E11049F00039AC9 /* YHNavVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHNavVC.swift; sourceTree = "<group>"; };
+		F5960B5B1E11049F00039AC9 /* beatuyCameraVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = beatuyCameraVC.swift; sourceTree = "<group>"; };
+		F5960B5D1E11049F00039AC9 /* YHLaunchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YHLaunchView.swift; sourceTree = "<group>"; };
+		F5960B611E11049F00039AC9 /* mainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainViewController.swift; sourceTree = "<group>"; };
+		F5960B651E11049F00039AC9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5960B6D1E1104A700039AC9 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		F5D078EB1E07B3A300C90A0C /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = "../../Library/Developer/Xcode/DerivedData/唯美拍-gponizbxhucpwfftgkwthpjktlrh/Build/Products/Debug-iphonesimulator/SnapKit/SnapKit.framework"; sourceTree = "<group>"; };
 		F5D078ED1E07B3A600C90A0C /* GPUImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GPUImage.framework; path = "../../Library/Developer/Xcode/DerivedData/唯美拍-gponizbxhucpwfftgkwthpjktlrh/Build/Products/Debug-iphonesimulator/GPUImage/GPUImage.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,15 +87,10 @@
 			isa = PBXGroup;
 			children = (
 				F5019E2C1E077ACD004173E6 /* AppDelegate.swift */,
-				F58CEF831E07E8F000FD8BC6 /* YHBaseVC.swift */,
+				F5960B551E11049F00039AC9 /* Class */,
+				F5960B6C1E1104A700039AC9 /* Extension */,
 				F5019E331E077ACD004173E6 /* Assets.xcassets */,
-				F5594A7E1E0BE7F200D36F18 /* UIColor+Extension.swift */,
-				F5049F681E07970D00FBB04A /* mainViewController.swift */,
 				F5019E351E077ACD004173E6 /* LaunchScreen.storyboard */,
-				F5019E381E077ACD004173E6 /* Info.plist */,
-				F5049F6A1E07B20C00FBB04A /* beatuyCameraVC.swift */,
-				F58CEF811E07E88F00FD8BC6 /* YHNavVC.swift */,
-				F58CEF851E07FCBD00FD8BC6 /* YHLaunchView.swift */,
 			);
 			path = "唯美拍";
 			sourceTree = "<group>";
@@ -106,6 +102,107 @@
 				9F62D5AB1E4849FCF6B0B8D5 /* Pods-唯美拍.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F5960B551E11049F00039AC9 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				F5960B561E11049F00039AC9 /* Base */,
+				F5960B591E11049F00039AC9 /* Camera */,
+				F5960B5F1E11049F00039AC9 /* Main */,
+				F5960B641E11049F00039AC9 /* Support */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		F5960B561E11049F00039AC9 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F5960B571E11049F00039AC9 /* YHBaseVC.swift */,
+				F5960B581E11049F00039AC9 /* YHNavVC.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F5960B591E11049F00039AC9 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				F5960B5A1E11049F00039AC9 /* Controller */,
+				F5960B5C1E11049F00039AC9 /* View */,
+				F5960B5E1E11049F00039AC9 /* ViewModel */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		F5960B5A1E11049F00039AC9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F5960B5B1E11049F00039AC9 /* beatuyCameraVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F5960B5C1E11049F00039AC9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F5960B5D1E11049F00039AC9 /* YHLaunchView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F5960B5E1E11049F00039AC9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F5960B5F1E11049F00039AC9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F5960B601E11049F00039AC9 /* Controller */,
+				F5960B621E11049F00039AC9 /* View */,
+				F5960B631E11049F00039AC9 /* ViewModel */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F5960B601E11049F00039AC9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F5960B611E11049F00039AC9 /* mainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F5960B621E11049F00039AC9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F5960B631E11049F00039AC9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F5960B641E11049F00039AC9 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				F5960B651E11049F00039AC9 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		F5960B6C1E1104A700039AC9 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F5960B6D1E1104A700039AC9 /* UIColor+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +273,7 @@
 			files = (
 				F5019E371E077ACD004173E6 /* LaunchScreen.storyboard in Resources */,
 				F5019E341E077ACD004173E6 /* Assets.xcassets in Resources */,
+				F5960B6B1E11049F00039AC9 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,13 +377,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5594A7F1E0BE7F200D36F18 /* UIColor+Extension.swift in Sources */,
-				F5049F6B1E07B20C00FBB04A /* beatuyCameraVC.swift in Sources */,
+				F5960B6E1E1104A700039AC9 /* UIColor+Extension.swift in Sources */,
+				F5960B661E11049F00039AC9 /* YHBaseVC.swift in Sources */,
+				F5960B671E11049F00039AC9 /* YHNavVC.swift in Sources */,
 				F5019E2D1E077ACD004173E6 /* AppDelegate.swift in Sources */,
-				F58CEF841E07E8F000FD8BC6 /* YHBaseVC.swift in Sources */,
-				F5049F691E07970D00FBB04A /* mainViewController.swift in Sources */,
-				F58CEF861E07FCBD00FD8BC6 /* YHLaunchView.swift in Sources */,
-				F58CEF821E07E88F00FD8BC6 /* YHNavVC.swift in Sources */,
+				F5960B681E11049F00039AC9 /* beatuyCameraVC.swift in Sources */,
+				F5960B691E11049F00039AC9 /* YHLaunchView.swift in Sources */,
+				F5960B6A1E11049F00039AC9 /* mainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,11 +502,13 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 6U3449LZ3Z;
-				INFOPLIST_FILE = "唯美拍/Info.plist";
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "唯美拍/Class/Support/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yh-dh.meipai";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -422,11 +522,13 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 6U3449LZ3Z;
-				INFOPLIST_FILE = "唯美拍/Info.plist";
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "唯美拍/Class/Support/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yh-dh.meipai";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

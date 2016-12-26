@@ -10,9 +10,12 @@ import Foundation
 import UIKit
 import SnapKit
 import GPUImage
+import RxSwift
+import RxCocoa
 
 class beatuyCameraVC: UIViewController{
     var photoImage :UIImageView = UIImageView()
+    fileprivate lazy var bag : DisposeBag = DisposeBag()
     fileprivate lazy var camera : GPUImageStillCamera = GPUImageStillCamera(sessionPreset: AVCaptureSessionPresetHigh, cameraPosition: .front)
     fileprivate lazy var filter = GPUImageBrightnessFilter()
     
@@ -26,13 +29,20 @@ class beatuyCameraVC: UIViewController{
 }
 extension beatuyCameraVC {
     fileprivate func setTakePhotoBtn(){
-//        setBtn(BtnName: "cameraBtn", titile: "拍照")
-        let btn:UIButton = UIButton()
-        view.addSubview(btn)
-        btn.setTitle("拍照", for: .normal)
-        btn.addTarget(self, action: #selector(takePhoto), for: .touchUpInside)
-        btn.backgroundColor = .red
-        btn.snp.makeConstraints { (make)->Void in
+        
+        let takePhotoBtn:UIButton = UIButton()
+        view.addSubview(takePhotoBtn)
+        takePhotoBtn.setTitle("拍照", for: .normal)
+        takePhotoBtn.rx.tap.subscribe { (event:Event<()>) in
+            print("照相")
+            self.camera.capturePhotoAsImageProcessedUp(toFilter: self.filter, withCompletionHandler: { (image, error) in
+                UIImageWriteToSavedPhotosAlbum(image!, nil, nil, nil)
+                self.photoImage.image = image
+                self.camera.stopCapture()
+            })
+        }.addDisposableTo(bag)
+        takePhotoBtn.backgroundColor = .red
+        takePhotoBtn.snp.makeConstraints { (make)->Void in
             make.width.height.equalTo(100)
             make.centerX.equalTo(view.bounds.width/2)
             make.bottom.equalTo(0)
@@ -102,7 +112,6 @@ extension beatuyCameraVC {
     fileprivate func setCPUImage(){
         camera.outputImageOrientation = .portrait
         camera.horizontallyMirrorFrontFacingCamera = true
-
 //        filter.brightness = 0.2
         camera.addTarget(filter)
         
@@ -113,18 +122,8 @@ extension beatuyCameraVC {
         camera.startCapture()
 
     }
-   
-    
 }
 extension beatuyCameraVC{
-    @objc fileprivate func takePhoto(){
-        print("照相")
-        camera.capturePhotoAsImageProcessedUp(toFilter: filter, withCompletionHandler: { (image, error) in
-            UIImageWriteToSavedPhotosAlbum(image!, nil, nil, nil)
-            self.photoImage.image = image
-            self.camera.stopCapture()
-        })
-    }
 
     @objc fileprivate func chooseStyle(){
         print("选择模式")

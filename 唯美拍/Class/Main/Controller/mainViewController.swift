@@ -9,12 +9,21 @@
 import Foundation
 import UIKit
 import SnapKit
+import RxSwift
+import RxCocoa
 
 class mainViewController: UIViewController {
-    
+    fileprivate var bag : DisposeBag = DisposeBag()
  
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpUI()
+        
+    }
+    
+}
+extension mainViewController{
+     fileprivate func setUpUI() {
         self.navigationController?.setNavigationBarHidden(true, animated: false)
         self.view.backgroundColor = .white
         let camerabtn:UIButton = UIButton()
@@ -25,14 +34,9 @@ class mainViewController: UIViewController {
             make.width.height.equalTo(100)
             make.center.equalTo(self.view)
         }
-        camerabtn.addTarget(self, action: #selector(camerBtnClick), for: .touchUpInside)
-        
-    }
-    
-}
-extension mainViewController{
-    @objc fileprivate func camerBtnClick() {
-        let beatuyVC :UIViewController = beatuyCameraVC()
-        navigationController?.pushViewController(beatuyVC, animated: true)
+        camerabtn.rx.tap.subscribe { (event: Event<()>) in
+            let beatuyVC :UIViewController = beatuyCameraVC()
+            self.navigationController?.pushViewController(beatuyVC, animated: true)
+            }.addDisposableTo(bag)
     }
 }
