@@ -95,14 +95,15 @@ extension beatuyCameraVC {
         
         let deadlineTime = DispatchTime.now() + .seconds(1)
         DispatchQueue.main.asyncAfter(deadline: deadlineTime) {
-            print("test")
             launchview.starAnimation()
         }
     }
     
     fileprivate func setCPUImage(){
         camera.outputImageOrientation = .portrait
-        filter.brightness = 0.2
+        camera.horizontallyMirrorFrontFacingCamera = true
+
+//        filter.brightness = 0.2
         camera.addTarget(filter)
         
         let showView = GPUImageView(frame: view.bounds)
@@ -124,13 +125,7 @@ extension beatuyCameraVC{
             self.camera.stopCapture()
         })
     }
-    fileprivate func setBtn(BtnName:String,titile:String){
-        let BtnName:UIButton = UIButton()
-        view.addSubview(BtnName)
-        BtnName.setTitle(titile, for: .normal)
-        BtnName.backgroundColor = UIColor.radomColor()
-//        rotateBtn.addTarget(self, action: #selector(rotate), for: .touchUpInside)
-    }
+
     @objc fileprivate func chooseStyle(){
         print("选择模式")
     }

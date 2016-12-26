@@ -1,15 +1,22 @@
 PODS:
   - GPUImage (0.1.7)
+  - RxCocoa (3.0.1):
+    - RxSwift (~> 3.0)
+  - RxSwift (3.0.1)
   - SnapKit (3.0.2)
 
 DEPENDENCIES:
   - GPUImage (~> 0.1.7)
+  - RxCocoa
+  - RxSwift
   - SnapKit (~> 3.0.2)
 
 SPEC CHECKSUMS:
   GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+  RxCocoa: 15a52fc590dcc700cb4a690a633b5c5184ce3a78
+  RxSwift: af5680055c4ad04480189c52d28385b1029493a6
   SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
 
-PODFILE CHECKSUM: cd5784813b253ec587be5b71e06e02e90ccce845
+PODFILE CHECKSUM: 5bd553c5487131ac9d1db711f80e785f21a82130
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.0.beta.1
