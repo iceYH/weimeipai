@@ -18,13 +18,13 @@ class beatuyCameraVC: UIViewController{
     fileprivate lazy var bag : DisposeBag = DisposeBag()
     fileprivate lazy var camera : GPUImageStillCamera = GPUImageStillCamera(sessionPreset: AVCaptureSessionPresetHigh, cameraPosition: .front)
     fileprivate lazy var filter = GPUImageBrightnessFilter()
-    
+//    fileprivate let styleView: ChooseStyleView = ChooseStyleView()
     override func viewDidLoad() {
         super.viewDidLoad()
-
         setEnterAnimation()
         setCPUImage()
         setTakePhotoBtn()
+        setStyleView()
     }
 }
 extension beatuyCameraVC {
@@ -108,6 +108,11 @@ extension beatuyCameraVC {
             launchview.starAnimation()
         }
     }
+    fileprivate func setStyleView(){
+        let styleView:ChooseStyleView = ChooseStyleView()
+        
+        view.addSubview(styleView)
+    }
     
     fileprivate func setCPUImage(){
         camera.outputImageOrientation = .portrait
@@ -127,6 +132,7 @@ extension beatuyCameraVC{
 
     @objc fileprivate func chooseStyle(){
         print("选择模式")
+//        styleView.showStyleView()
     }
     @objc fileprivate func optionalStyle(){
         print("自定义")

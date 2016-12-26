@@ -18,6 +18,7 @@
 		F5960B6A1E11049F00039AC9 /* mainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5960B611E11049F00039AC9 /* mainViewController.swift */; };
 		F5960B6B1E11049F00039AC9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5960B651E11049F00039AC9 /* Info.plist */; };
 		F5960B6E1E1104A700039AC9 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5960B6D1E1104A700039AC9 /* UIColor+Extension.swift */; };
+		F5960B701E110F4C00039AC9 /* ChooseStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5960B6F1E110F4C00039AC9 /* ChooseStyleView.swift */; };
 		F5D078EC1E07B3A300C90A0C /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D078EB1E07B3A300C90A0C /* SnapKit.framework */; };
 		F5D078EE1E07B3A600C90A0C /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D078ED1E07B3A600C90A0C /* GPUImage.framework */; };
 /* End PBXBuildFile section */
@@ -37,6 +38,7 @@
 		F5960B611E11049F00039AC9 /* mainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainViewController.swift; sourceTree = "<group>"; };
 		F5960B651E11049F00039AC9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5960B6D1E1104A700039AC9 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		F5960B6F1E110F4C00039AC9 /* ChooseStyleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseStyleView.swift; sourceTree = "<group>"; };
 		F5D078EB1E07B3A300C90A0C /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = "../../Library/Developer/Xcode/DerivedData/唯美拍-gponizbxhucpwfftgkwthpjktlrh/Build/Products/Debug-iphonesimulator/SnapKit/SnapKit.framework"; sourceTree = "<group>"; };
 		F5D078ED1E07B3A600C90A0C /* GPUImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GPUImage.framework; path = "../../Library/Developer/Xcode/DerivedData/唯美拍-gponizbxhucpwfftgkwthpjktlrh/Build/Products/Debug-iphonesimulator/GPUImage/GPUImage.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -146,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				F5960B5D1E11049F00039AC9 /* YHLaunchView.swift */,
+				F5960B6F1E110F4C00039AC9 /* ChooseStyleView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -382,6 +385,7 @@
 				F5960B671E11049F00039AC9 /* YHNavVC.swift in Sources */,
 				F5019E2D1E077ACD004173E6 /* AppDelegate.swift in Sources */,
 				F5960B681E11049F00039AC9 /* beatuyCameraVC.swift in Sources */,
+				F5960B701E110F4C00039AC9 /* ChooseStyleView.swift in Sources */,
 				F5960B691E11049F00039AC9 /* YHLaunchView.swift in Sources */,
 				F5960B6A1E11049F00039AC9 /* mainViewController.swift in Sources */,
 			);
