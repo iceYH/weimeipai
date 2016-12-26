@@ -8,9 +8,8 @@
 
 import Foundation
 import UIKit
-import SnapKit
 import GPUImage
-
+import SnapKit
 class beatuyCameraVC: UIViewController{
     var photoImage :UIImageView = UIImageView()
     fileprivate lazy var camera : GPUImageStillCamera = GPUImageStillCamera(sessionPreset: AVCaptureSessionPresetHigh, cameraPosition: .front)
@@ -102,6 +101,7 @@ extension beatuyCameraVC {
     
     fileprivate func setCPUImage(){
         camera.outputImageOrientation = .portrait
+        camera.
         filter.brightness = 0.2
         camera.addTarget(filter)
         
@@ -133,6 +133,8 @@ extension beatuyCameraVC{
     }
     @objc fileprivate func chooseStyle(){
         print("选择模式")
+        
+        
     }
     @objc fileprivate func optionalStyle(){
         print("自定义")

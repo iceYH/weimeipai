@@ -32,6 +32,10 @@ class mainViewController: UIViewController {
 }
 extension mainViewController{
     @objc fileprivate func camerBtnClick() {
+        let cameraView : CameraStyleView = CameraStyleView(frame: CGRect(x: 0.0, y: 100.0, width: self.view.bounds.width, height: 80.0))
+        cameraView.backgroundColor = .red;
+        view.addSubview(cameraView)
+        
         let beatuyVC :UIViewController = beatuyCameraVC()
         navigationController?.pushViewController(beatuyVC, animated: true)
     }
