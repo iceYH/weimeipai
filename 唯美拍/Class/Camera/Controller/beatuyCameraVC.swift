@@ -88,8 +88,6 @@ extension beatuyCameraVC {
             make.top.equalTo(20)
             make.centerX.equalTo(view.bounds.width/2)
         }
-
-
     }
     fileprivate func setUpUI(){
         view.addSubview(photoImage)
@@ -100,7 +98,7 @@ extension beatuyCameraVC {
     
     fileprivate func setEnterAnimation(){
         let launchview = YHLaunchView(frame:CGRect(x: 0, y:0 , width: self.view.bounds.size.width, height: self.view.bounds.size.height), launchImage: UIImage(named: "LaunchBackgroundImage"))
-        
+    
         view.addSubview(launchview)
         
         let deadlineTime = DispatchTime.now() + .seconds(1)
@@ -110,8 +108,13 @@ extension beatuyCameraVC {
     }
     fileprivate func setStyleView(){
         let styleView:ChooseStyleView = ChooseStyleView()
-        
+        styleView.backgroundColor = UIColor.radomColor()
         view.addSubview(styleView)
+        styleView.snp.makeConstraints { (make)-> Void in
+            make.bottom.equalTo(-100)
+            make.right.left.equalTo(0)
+            make.height.equalTo(100)
+        }
     }
     
     fileprivate func setCPUImage(){
