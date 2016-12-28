@@ -14,6 +14,6 @@ let APP_FRAME_HEIGHT : CGFloat! = UIScreen.main.bounds.height
 //屏幕的宽
 let APP_FRAME_WIDTH : CGFloat = UIScreen.main.bounds.width
 //layout上下距离
-let LAYOUT_LEFTORRIGHT_WIDTH : CGFloat = (APP_FRAME_WIDTH-40)/5 + 20
-let CELL_WIDTH : CGFloat = (APP_FRAME_WIDTH-40)*3/5
-let CELL_HEIGHT : CGFloat = APP_FRAME_HEIGHT*3/7
+let LAYOUT_LEFTORRIGHT_WIDTH : CGFloat = (APP_FRAME_WIDTH-100)/15
+let CELL_WIDTH : CGFloat = (APP_FRAME_WIDTH-100)*3/15
+let CELL_HEIGHT : CGFloat = APP_FRAME_HEIGHT*3/20

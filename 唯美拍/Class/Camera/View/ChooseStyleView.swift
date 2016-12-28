@@ -29,8 +29,8 @@ class ChooseStyleView: UIView {
 extension ChooseStyleView {
     fileprivate func setView(){
         print("创建来了VIEW")
-        let styleView: UICollectionView = UICollectionView()
-        self.addSubview(styleView)
+//        let styleView: UICollectionView = UICollectionView()
+//        self.addSubview(styleView)
     }
     
     fileprivate func showView() {

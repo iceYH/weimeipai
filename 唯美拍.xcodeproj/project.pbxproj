@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		44E6F53D3E5BCBB8E13C85E3 /* Pods____.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A96D4CBF0802293CAB41F49 /* Pods____.framework */; };
+		7E2A136A1E13BD6F00FFF852 /* MPCameraFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2A13661E13BD6F00FFF852 /* MPCameraFilterView.swift */; };
+		7E2A136B1E13BD6F00FFF852 /* MPFilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2A13671E13BD6F00FFF852 /* MPFilterCell.swift */; };
+		7E2A136C1E13BD6F00FFF852 /* MPFilterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2A13681E13BD6F00FFF852 /* MPFilterModel.swift */; };
+		7E2A136D1E13BD6F00FFF852 /* MPFilterViewLayOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2A13691E13BD6F00FFF852 /* MPFilterViewLayOut.swift */; };
 		F5019E2D1E077ACD004173E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5019E2C1E077ACD004173E6 /* AppDelegate.swift */; };
 		F5019E341E077ACD004173E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5019E331E077ACD004173E6 /* Assets.xcassets */; };
 		F5019E371E077ACD004173E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5019E351E077ACD004173E6 /* LaunchScreen.storyboard */; };
@@ -29,6 +33,10 @@
 /* Begin PBXFileReference section */
 		07D2C07768D5E640B541DA71 /* Pods-唯美拍.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-唯美拍.debug.xcconfig"; path = "Pods/Target Support Files/Pods-唯美拍/Pods-唯美拍.debug.xcconfig"; sourceTree = "<group>"; };
 		4A96D4CBF0802293CAB41F49 /* Pods____.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods____.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E2A13661E13BD6F00FFF852 /* MPCameraFilterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPCameraFilterView.swift; sourceTree = "<group>"; };
+		7E2A13671E13BD6F00FFF852 /* MPFilterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPFilterCell.swift; sourceTree = "<group>"; };
+		7E2A13681E13BD6F00FFF852 /* MPFilterModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPFilterModel.swift; sourceTree = "<group>"; };
+		7E2A13691E13BD6F00FFF852 /* MPFilterViewLayOut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPFilterViewLayOut.swift; sourceTree = "<group>"; };
 		9F62D5AB1E4849FCF6B0B8D5 /* Pods-唯美拍.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-唯美拍.release.xcconfig"; path = "Pods/Target Support Files/Pods-唯美拍/Pods-唯美拍.release.xcconfig"; sourceTree = "<group>"; };
 		F5019E291E077ACD004173E6 /* 唯美拍.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "唯美拍.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5019E2C1E077ACD004173E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -157,6 +165,10 @@
 				F5960B6F1E110F4C00039AC9 /* ChooseStyleView.swift */,
 				F52D2E5A1E113563009A35F0 /* ChooseStyleLayout.swift */,
 				F52D2E5C1E11358E009A35F0 /* ChooseStyleCell.swift */,
+				7E2A13661E13BD6F00FFF852 /* MPCameraFilterView.swift */,
+				7E2A13671E13BD6F00FFF852 /* MPFilterCell.swift */,
+				7E2A13681E13BD6F00FFF852 /* MPFilterModel.swift */,
+				7E2A13691E13BD6F00FFF852 /* MPFilterViewLayOut.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -255,8 +267,8 @@
 				TargetAttributes = {
 					F5019E281E077ACD004173E6 = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = 6U3449LZ3Z;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 4XNXN38KSW;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -389,8 +401,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E2A136D1E13BD6F00FFF852 /* MPFilterViewLayOut.swift in Sources */,
 				F5960B6E1E1104A700039AC9 /* UIColor+Extension.swift in Sources */,
 				F5960B661E11049F00039AC9 /* YHBaseVC.swift in Sources */,
+				7E2A136C1E13BD6F00FFF852 /* MPFilterModel.swift in Sources */,
+				7E2A136A1E13BD6F00FFF852 /* MPCameraFilterView.swift in Sources */,
 				F5960B671E11049F00039AC9 /* YHNavVC.swift in Sources */,
 				F5019E2D1E077ACD004173E6 /* AppDelegate.swift in Sources */,
 				F5960B681E11049F00039AC9 /* beatuyCameraVC.swift in Sources */,
@@ -400,6 +415,7 @@
 				F52D2E5D1E11358E009A35F0 /* ChooseStyleCell.swift in Sources */,
 				F5960B6A1E11049F00039AC9 /* mainViewController.swift in Sources */,
 				F52D2E5F1E1136CD009A35F0 /* WeiMeiPaiMacro.swift in Sources */,
+				7E2A136B1E13BD6F00FFF852 /* MPFilterCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,13 +533,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 6U3449LZ3Z;
+				DEVELOPMENT_TEAM = 4XNXN38KSW;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "唯美拍/Class/Support/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yh-dh.meipai";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yongche.iOSDriver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e8f9cda9-d9c6-461b-8f39-759e992b01db";
+				PROVISIONING_PROFILE_SPECIFIER = iOSDriver_dev;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -537,12 +555,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 6U3449LZ3Z;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "唯美拍/Class/Support/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yh-dh.meipai";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yongche.iOSDriver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;

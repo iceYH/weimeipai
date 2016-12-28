@@ -9,14 +9,6 @@
 import UIKit
 import RxSwift
 import RxCocoa
-//屏幕的高
-let APP_FRAME_HEIGHT : CGFloat! = UIScreen.main.bounds.height
-//屏幕的宽
-let APP_FRAME_WIDTH : CGFloat = UIScreen.main.bounds.width
-//layout上下距离
-let LAYOUT_LEFTORRIGHT_WIDTH : CGFloat = (APP_FRAME_WIDTH-100)/15
-let CELL_WIDTH : CGFloat = (APP_FRAME_WIDTH-100)*3/15
-let CELL_HEIGHT : CGFloat = APP_FRAME_HEIGHT*3/20
 
 class MPCameraFilterView: UIView {
 

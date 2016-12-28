@@ -17,14 +17,23 @@ class beatuyCameraVC: UIViewController{
     var photoImage :UIImageView = UIImageView()
     fileprivate lazy var bag : DisposeBag = DisposeBag()
     fileprivate lazy var camera : GPUImageStillCamera = GPUImageStillCamera(sessionPreset: AVCaptureSessionPresetHigh, cameraPosition: .front)
-    fileprivate lazy var filter = GPUImageBrightnessFilter()
-//    fileprivate let styleView: ChooseStyleView = ChooseStyleView()
+    let bilateralFilter = GPUImageBilateralFilter() // 磨皮
+    let exposureFilter = GPUImageExposureFilter() // 曝光
+    let brightnessFilter = GPUImageBrightnessFilter() // 美白
+    let satureationFilter = GPUImageSaturationFilter() // 饱和
+    
+    fileprivate lazy var mpFilterView  : MPCameraFilterView = {
+        let mpView = MPCameraFilterView(frame:CGRect(x: 0, y: APP_FRAME_HEIGHT - 150, width: APP_FRAME_WIDTH, height: CELL_HEIGHT))
+        mpView.isHidden = true
+        return mpView
+    }()
     override func viewDidLoad() {
         super.viewDidLoad()
         setEnterAnimation()
         setCPUImage()
         setTakePhotoBtn()
-        setStyleView()
+        view.addSubview(mpFilterView)
+//        setStyleView()
     }
 }
 extension beatuyCameraVC {
@@ -35,12 +44,12 @@ extension beatuyCameraVC {
         takePhotoBtn.setTitle("拍照", for: .normal)
         takePhotoBtn.rx.tap.subscribe { (event:Event<()>) in
             print("照相")
-            self.camera.capturePhotoAsImageProcessedUp(toFilter: self.filter, withCompletionHandler: { (image, error) in
+            self.camera.capturePhotoAsImageProcessedUp(toFilter:self.getGroupFilters(), withCompletionHandler: { (image, error) in
                 UIImageWriteToSavedPhotosAlbum(image!, nil, nil, nil)
                 self.photoImage.image = image
                 self.camera.stopCapture()
             })
-        }.addDisposableTo(bag)
+            }.addDisposableTo(bag)
         takePhotoBtn.backgroundColor = .red
         takePhotoBtn.snp.makeConstraints { (make)->Void in
             make.width.height.equalTo(100)
@@ -98,7 +107,7 @@ extension beatuyCameraVC {
     
     fileprivate func setEnterAnimation(){
         let launchview = YHLaunchView(frame:CGRect(x: 0, y:0 , width: self.view.bounds.size.width, height: self.view.bounds.size.height), launchImage: UIImage(named: "LaunchBackgroundImage"))
-    
+        
         view.addSubview(launchview)
         
         let deadlineTime = DispatchTime.now() + .seconds(1)
@@ -120,23 +129,55 @@ extension beatuyCameraVC {
     fileprivate func setCPUImage(){
         camera.outputImageOrientation = .portrait
         camera.horizontallyMirrorFrontFacingCamera = true
-//        filter.brightness = 0.2
-        camera.addTarget(filter)
+        // 3.获取滤镜组
+        let filterGroup = getGroupFilters()
+        
+        // 4.设置GPUImage的响应链
+        camera.addTarget(filterGroup)
         
         let showView = GPUImageView(frame: view.bounds)
         view.insertSubview(showView, at: 0)
-        filter.addTarget(showView)
-        
+        filterGroup.addTarget(showView)
         camera.startCapture()
-
     }
+    
+    fileprivate func getGroupFilters() -> GPUImageFilterGroup {
+        // 1.创建滤镜组（用于存放各种滤镜：美白、磨皮等等）
+        let filterGroup = GPUImageFilterGroup()
+        
+        // 2.创建滤镜(设置滤镜的引来关系)
+        bilateralFilter.addTarget(brightnessFilter)
+        brightnessFilter.addTarget(exposureFilter)
+        exposureFilter.addTarget(satureationFilter)
+        
+        // 3.设置滤镜组链初始&终点的filter
+        filterGroup.initialFilters = [bilateralFilter]
+        filterGroup.terminalFilter = satureationFilter
+        
+        return filterGroup
+    }
+    
+    
+    
 }
 extension beatuyCameraVC{
-
+    @objc fileprivate func takePhoto(){
+        print("照相")
+        camera.capturePhotoAsImageProcessedUp(toFilter: getGroupFilters(), withCompletionHandler: { (image, error) in
+            UIImageWriteToSavedPhotosAlbum(image!, nil, nil, nil)
+            self.photoImage.image = image
+            self.camera.stopCapture()
+        })
+    }
+    
+    }
+extension beatuyCameraVC{
+    
     @objc fileprivate func chooseStyle(){
         print("选择模式")
-//        styleView.showStyleView()
+        mpFilterView.isHidden = !mpFilterView.isHidden
     }
+
     @objc fileprivate func optionalStyle(){
         print("自定义")
     }
